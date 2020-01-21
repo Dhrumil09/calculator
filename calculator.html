@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="csscalc.css">
+</head>
+<body>
+<div id="col">
+<div class="square">
+    <table id="table1">
+        <tr>
+            <td colspan="3"><input type="text" id="text" placeholder="0"  onkeypress="return isNumber(event)" autofocus ></input></td>
+            <td colspan="1"><button id="btn_clr" value="c">C</button></td> 
+        </tr>
+        <tr>
+            <td colspan="1"><button id="cube" value="cube">x<sup>3</sup></button></td>
+            <td><button id="squere" value="square">x<sup>2</sup></button>
+            <button id="exponent" value="exponent">x<sup>n</sup></button></td>
+            <td colspan="1"><button id="root" value="root">&radic;</td>
+            <td colspan="1"><button id="devide" value="/">/</button></td>
+        </tr>
+        <tr>
+            <td colspan="1"><button id="seven" value="7">7</button></td>
+            <td colspan="1"><button id="eight" value="8">8</button></td>
+            <td colspan="1"><button id="nine" value="9">9</button></td>
+            <td colspan="1"><button id="multiply" value="*">*</button></td>
+        </tr>
+        <tr>
+            <td colspan="1"><button id="four" value="4">4</button></td>
+            <td colspan="1"><button id="five" value="5">5</button></td>
+            <td colspan="1"><button id="six" value="6">6</button></td>
+            <td colspan="1"><button id="minus" value="-">-</button></td>
+        </tr>
+        <tr>
+            <td colspan="1"><button id="one" value="1">1</button></td>
+            <td colspan="1"><button id="two" value="2">2</button></td>
+            <td colspan="1"><button id="three" value="3">3</button></td>
+            <td colspan="1"><button id="plus" value="+">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="1"><button id="fac" value="fac">fac</button></td>
+            <td colspan="1"><button id="zero" value="0">0</button></td>
+            <td colspan="1"><button id="point" value=".">.</button></td>
+            <td colspan="1"><button id="equal" value="=">=</button></td>
+        </tr>
+    </table>
+</div>
+<div id="history">
+    <h1> History</h1>
+    <ul id="mylist"></ul>
+    <button id="delete" value="delete">Delete</button>
+</div>
+</div>
+<script src="calc2.js"></script>
+</body>
+</html> 
